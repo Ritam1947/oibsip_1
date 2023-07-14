@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"/>
+    <title>Landing Page
+    </title>
+</head>
+<body>
+    <div class="container">
+        <div class="split left">
+            <h6>
+                Cloud is the Future
+            </h6>
+            <a href="https://www.knowledgehut.com/blog/cloud-computing/cloud-computing-future" class="btn">Explore Now</a>
+        </div>
+        <div class="split right">
+            <h6>Microsoft Azure,AWS,Gooogle Cloud<br/></h6>
+            <a href="https://www.veritis.com/blog/aws-vs-azure-vs-gcp-the-cloud-platform-of-your-choice/" class="btn">Explore cloud Services</a>
+            
+
+        </div>
+    </div>
+   
+    
+    
+    <script>
+        const left = document.querySelector('.left');
+        const right = document.querySelector('.right');
+        const container = document.querySelector('.container');
+      
+        
+
+left.addEventListener('mouseenter',() => container.classList.add('hover-left'));
+left.addEventListener('mouseleave',() => container.classList.remove('hover-left'));
+
+right.addEventListener('mouseenter', () => container.classList.add('hover-right'));
+right.addEventListener('mouseleave', () => container.classList.remove('hover-right'));
+        
+    </script>
+</body>
+</html>
